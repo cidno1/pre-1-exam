@@ -20,12 +20,10 @@
 <script>
 
 var node = document.createElement("li");
-var textnode = document.createTextNode("melon");
+var textnode = document.createTextNode("Melon");
+var locatenode = document.querySelector("ul").childNodes[3]
 node.appendChild(textnode);
-document.querySelector("ul").appendChild(node);
-
-var list = document.querySelector("ul").childNodes[11];
-list.parentNode.removeChild(list)
+locatenode.appendChild(node);
 
 </script>
 </html>
